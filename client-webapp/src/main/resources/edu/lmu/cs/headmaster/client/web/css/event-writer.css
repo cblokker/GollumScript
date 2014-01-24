@@ -1,9 +1,0 @@
-@import url("event-view.css");
-
-#search-empty {
-    text-align: center;
-}
-
-i.icon-remove-sign {
-    cursor: crosshair;
-}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            #canvas{
+                width:  100%;
+                height: 100%;
+            }
+        </style>
+
+        <meta charset="UTF-8"/>
+        <title>Crib Sheet</title>
+    </head>
+
+    <body>
+
+        <table border="1">
+            <tr>
+                <td width="250"><b>Symbol</b></td>
+                <td width="200"><b>Description</b></td>
+            </tr>
+
+            <tr>
+                <td>~</td>
+                <td>Home Directory</td>
+            </tr>
+
+            <tr>
+                <td>;</td>
+                <td>Command Separator to execute multiple commands on the same line</td>
+            </tr>
+
+            <tr>
+                <td>,</td>
+                <td>Operation Linker to chain multiple arithmetic operations on the same line</td>
+            </tr>
+
+            <tr>
+                <td>$variable</td>
+                <td>Variable Substitution</td>
+            </tr>
+
+            <tr>
+                <td>command > output-file</td>
+                <td>Redirect the standard output (stdout) of command to output-file</td>
+            </tr>
+
+            <tr>
+                <td>command < input-file</td>
+                <td>Redirect the contents of input-file to the standard input (stdin) of command</td>
+            </tr>
+
+            <tr>
+                <td>command < input-file > output-file</td>
+                <td>Redirect the contents of input-file to the standard input (stdin) of command AND redirect the standard output (stdout) of command to output-file</td>
+            </tr>
+
+            <tr>
+                <td>command >> output-file</td>
+                <td>Append stdout of command to output-file</td>
+            </tr>
+
+            <tr>
+                <td>command << input-file</td>
+                <td>Append stdin of command to output-file</td>
+            </tr>
+
+            <tr>
+                <td> command1 | command2 </td>
+                <td>Redirect stdout of command1 to stdin of command2</td>
+            </tr>
+
+
+            <tr>
+                <td>pattern$</td>
+                <td>Regex: matches lines that end with the given pattern</td>
+            </tr>
+
+            <tr>
+                <td>pattern*</td>
+                <td>Regex: matches zero or more instances of the given pattern</td>
+            </tr>
+
+            <tr>
+                <td>pattern{n}</td>
+                <td>Regex: matches exactly n instances of the given pattern</td>
+            </tr>
+
+        </table>
+    </body>
+</html>

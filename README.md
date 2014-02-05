@@ -60,7 +60,19 @@ The Gollum language is designed by implementing the famous character “Gollum" 
               3 === 5 && x >= 9 | 1 != y / 4 && !weFoundIt            3 === 5 & x >= 9 | 1 != y / 4 & !found
 
 **FUNCTIONS**
-                                                                  
+
+    magic it bmi(it pounds, it inches):             var bmi = function (pounds, inches) {
+        forever it KILOGRAM_PER_POUND = 0.45359237          var KILOGRAMS_PER_POUND = 0.45359237;
+        forever it METERS_PER_INCH = 0.0254                 var METERS_PER_INCH = 0.0254;
+        it kilos = pounds * KILOGRAM_PER_POUND              var kilos = pounds * KILOGRAMS_PER_POUND;
+        it inches = inches * METERS_PER_INCH                var inches = inches * METERS_PER_INCH;
+        givesUs kilos / (meters * meters)                   return kilos / (meters * meters)
+    GollumGollum                                    }
+                                            	    
+    magic it gcd(x, y):                              var gcd = function (x, y) {
+        givesUs x % y == 0 ? x : gcd(y, x % y)              return x%y == 0 ? x : gcd(y, x%y); 
+    GollumGollum                                        	    }       
+    
 **KEYWORDS**
 
 **TYPES**

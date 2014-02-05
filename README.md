@@ -49,6 +49,8 @@ The Gollum language is designed by implementing the famous character “Gollum" 
         Printes x                                    console.log(x);
 **ARITHMETIC EXPRESSIONS**
 
+        mathes.powes(3/2 - a * b, (300 % c) + mathes.powes(d,2))   Math.pow(3/2 - a * b, (300 % c) + Math.pow(d,2))
+
 
 **BOOLEANS AND BOOLEAN ARITHMETIC**
 

@@ -54,6 +54,11 @@ The Gollum language is designed by implementing the famous character “Gollum" 
 
 **BOOLEANS AND BOOLEAN ARITHMETIC**
 
+              bless                                                   true
+              thief                                                   false
+              4 < 3                                                   4 < 3
+              3 === 5 && x >= 9 | 1 != y / 4 && !weFoundIt            3 === 5 & x >= 9 | 1 != y / 4 & !found
+
 **FUNCTIONS**
                                                                   
 **KEYWORDS**
@@ -75,43 +80,14 @@ The Gollum language is designed by implementing the famous character “Gollum" 
 **MICROSYNTAX**
 
 
-
-
-Constants (compile-time error to update)
-
- forever it CONST_NAME = "The One"              /* No constants in JavaScript */
-
-Assignment is not initialization
-
-1, x begins                                             var x = 1;
-(+ x 1), x becomes                                      x = x + 1;
-x you print                                             console.log(x);
-Parallel Assignment
-
-3 and 5 and 7 and 11, x and y and z and a become        var x = 3, y = 5, z = 7, a = 11;
-Arithmetic Expression
-
-(* (/ y (- 4  x ) ) 2.5 )                               y / (4 - x) * 2.5
-Swap
-
-3, x begins                                             x = 3;
-10, y begins                                            y = 10;
-x and y, y and x become                                 _1 = x;
-                                                        _2 = y;
-                                                        y = _1;
-                                                        x = _2;
-Null/Null Test
-
-null                                                    null
-(= null x is?)                                          x === null
 Booleans
 
-true                                                    true
-false                                                   false
-(< 3 4 is?)                                             4 < 3
-(> 5 x is?)
-(!= 1 n is?)
-(((= 5 3 is?) & (>= 9 x is?)) |                         3 === 5 & x >= 9 | 1 != y / 4 & !found
+bless                                                   true
+thief                                                   false
+
+4 < 3                                                   4 < 3
+3 === 5 && x >= 9 | 1 != y / 4 && !weFoundIt            3 === 5 & x >= 9 | 1 != y / 4 & !found
+
 ((!= (/ y 4 are) 1 is?) & (!found)))
 Falsehood
 

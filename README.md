@@ -17,7 +17,9 @@ it interleaves = findPrecious (a, b):
 
 GollumScript is a language that allows the user to implement solutions like a true LOTR fan should.
 
-      http://my.cs.lmu.edu/~aalzaid1/gollum/talklikegollum.png
+![Gollum Rules](http://my.cs.lmu.edu/~aalzaid1/gollum/talklikegollum.png "Gollum Rules")
+
+
 
 --------------------------------
 

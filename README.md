@@ -32,16 +32,15 @@ The Gollum language is designed by implementing the famous character “Gollum" 
 
 **ONE LINE COMPLETE HELLO WORLD SCRIPT**
 
-        printses("Hello my precious")              console.log("Hello my precious");
+        printes("Hello my precious")                console.log("Hello my precious");
 
 **VARIABLE DECLARATIONS**
 
         it yearsOld = "we doesnt know"               var yearsOld = "we doesnt know";
 
-
 **CONSTANTS**
 
-
+        forever it CONST_NAME = "The One"            /* No constants in JavaScript */
     
 **ASSIGNMENT IS MOST CERTAINLY NOT INITIALIZATION**
 
@@ -67,7 +66,6 @@ The Gollum language is designed by implementing the famous character “Gollum" 
 
 **ARRAYS**
 
-
 **SYNTAX**
 
 **MICROSYNTAX**
@@ -77,7 +75,8 @@ The Gollum language is designed by implementing the famous character “Gollum" 
 
 Constants (compile-time error to update)
 
-"disbelief", REASON_FOR_FAILURE must be                 /* No constants in JavaScript */
+ forever it CONST_NAME = "The One"              /* No constants in JavaScript */
+
 Assignment is not initialization
 
 1, x begins                                             var x = 1;

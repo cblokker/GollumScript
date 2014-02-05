@@ -13,15 +13,17 @@ it interleaves = findPrecious (a, b):
 
 
 
-# Spitfire
+# GollumScript
 
-Spitfire is a language that allows the user to implement solutions as fast as possible using the least amount of keystrokes. Ain't nobody got time to type out whole words! Spitfire is statically and strongly typed. It is FORTRAN-esque in that all of its keywords are capitalized. One day in class, `jcrawley` said,  `"I want to make a language that spits fire."` On that fateful day, we knew we had our name.
+GollumScript is a language that allows the user to implement solutions like a true LOTR fan should.
+
+      http://my.cs.lmu.edu/~aalzaid1/gollum/talklikegollum.png
 
 --------------------------------
 
 #Examples
 
-**SPITFIRE ON THE LEFT, JAVASCRIPT ON THE RIGHT**
+**GollumScript ON THE LEFT, JAVASCRIPT ON THE RIGHT**
 
 
 **VARIABLE DECLARATIONS**

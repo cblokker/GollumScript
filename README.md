@@ -44,7 +44,9 @@ The Gollum language is designed by implementing the famous character “Gollum" 
     
 **ASSIGNMENT IS MOST CERTAINLY NOT INITIALIZATION**
 
-
+        it x = 1                                     var x = 1;
+        x = x + 1                                    x = x + 1;
+        Printes x                                    console.log(x);
 **ARITHMETIC EXPRESSIONS**
 
 

@@ -16,6 +16,9 @@ it interleaves = findPrecious (a, b):
 # GollumScript
 
 GollumScript is a language that allows the user to implement solutions like a true LOTR fan should.
+### DESCRIPTION
+The Gollum language is designed by implementing the famous character “Gollum" from Lord of The Rings.  "Thief, thief, thief! Baggins! We hates it, we hates it, we hates it forever!”  
+
 
 ![Gollum Rules](http://my.cs.lmu.edu/~aalzaid1/gollum/talklikegollum.png "Gollum Rules")
 

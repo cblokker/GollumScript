@@ -17,7 +17,7 @@ The Gollum language is designed by implementing the famous character “Gollum" 
 
 **ONE LINE COMPLETE HELLO WORLD SCRIPT**
 
-        printes("Hello my precious")                console.log("Hello my precious");
+        printes "Hello my precious"                 console.log("Hello my precious");
 
 **VARIABLE DECLARATIONS**
 
@@ -67,7 +67,7 @@ The Gollum language is designed by implementing the famous character “Gollum" 
         make Thing                         define class
         revolve Til                        loop until
         revolves                           for loop
-        while                              while loop
+        whiles                             while loop
         givesUs                            return
 
 **TYPES**
@@ -139,23 +139,24 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
 
       Script  ::= Stmt+
       
-      Block   ::= Stmt+ ':' Newline
-      
-      Stmt    ::= Assignment
-               |  Declaration
+      Stmt    ::= Declaration
+               |  Assignment
                |  Conditional
                |  Loop
                |  Return
                |  Print
-               
+              
       Declaration ::= VarDec | TypeDec | FuncDec
+      VarDec      ::= Type Id (Id)* '=' Exp (Exp)*
+      TypeDec     ::=  
+      FuncDec     ::= 'magic' Id Params Break Block
       
-      Type ::= 'Riddle' | 'Num' | 'Str' | 'Chr' | '<>' | '[]'
-      
-      VarDec   ::=  Type Id (Id)* '=' Exp (Exp)*
-      TypeDec  ::=  
-      FuncDec  ::=  'magic' Id Params Break Block
-      
+      Assignment  ::= Id '=' Exp
+      Conditional ::= 'ifes' Exp block ('ifelses' Exp Block)* (‘elses’ Block)?
+      While       ::= 'whiles' Exp Block
+      Loop        ::=
+      Return      ::= 'givesUs' EXP
+      Print       ::= 'printes' EXP
       
       
       Exp   ::= Exp1 ('or' Exp1)*
@@ -164,6 +165,8 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
       Exp3  ::= Exp4 ([+-] Exp4)*
       EXP4  ::= Exp5 ([*/] Exp5)*
       EXP5  ::= ('not' | '-')? Exp6
+      
+      Block   ::= Stmt+ ':' Newline
       
 
 **MICROSYNTAX**

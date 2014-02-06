@@ -94,17 +94,32 @@ Class names automatically become constructor functions, taking as arguments the 
       ring theSecond = ring(13, 0.3, 0.11, thief)
 
 **NUMBERS AND THEIR TYPES**
+Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal numbers are prefixed with a 0 and hexadecimal numbers are prefixed with a 0x. Decimal numbers have no prefix.
 
+      Num a = 0227                              var a = 0227;
+      Num b = 0x213AAC                          var b = 0x213AAC;
+      Num c = 13653                             var c = 13653;
+      
 **STRINGS AND STRING MANIPULATION**
-
-     Str first = "Hello” + “thief!”                var first = “Hello” + “thief!”; 
-     Str second = “Spitfire”sliceIt(3,6)           var second = "Spitfire".slice(3,6);
-     Str third = "Spitfire"sliceIT(3)              var third = "Spitfire".slice(3);
-     “Baggins are thieves” findsItsIndex("are")    “Baggins are thieves”.indexOf("are"); // 9  
-     “Baggins are thieves”[4]                  "Baggins are thieves"[4]              // 'i'
 
 **LOOPS**
 
+        while (bless):                                     while (true) {
+                printes "make it stop"                          console.log("make it stop");
+        GollumGollum                                        }
+        
+        revolves i 1 100 1                            for (var i = 1; i <= 100; i++) {
+                ifes	i % 15 == 0:		                if (i % 15 == 0) {
+                        printes “Blessed"         		        console.log("FizzBuzz");
+                GollumGollum                                    } else if (i % 3 == 0) {
+                                                                        console.log("Fizz");
+                ifelses i % 5 == 0:                             } else if (i % 5 == 0) {
+                        printes “Smeagol"                                   console.log("Buzz");
+                GollumGollum                                    } else {
+                elses:                                                  console.log(i);
+                        printes i                                       }
+                GollumGollum                            }
+         
 **ARRAYS**
 
 **SYNTAX**

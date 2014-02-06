@@ -152,9 +152,18 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
       
       Type ::= 'Riddle' | 'Num' | 'Str' | 'Chr' | '<>' | '[]'
       
-      VarDec   ::=  Type Id (Id)* ‘=’ Exp (Exp)*
+      VarDec   ::=  Type Id (Id)* '=' Exp (Exp)*
       TypeDec  ::=  
-      FuncDec  ::=  ‘magic’ Id Params Break Block
+      FuncDec  ::=  'magic' Id Params Break Block
+      
+      
+      
+      Exp   ::= Exp1 ('or' Exp1)*
+      Exp1  ::= Exp2 ('and' Exp2)*
+      Exp2  ::= Exp3 (( '<' | '<=' | '==' | '!=' | '>=' | '>') Exp3)?
+      Exp3  ::= Exp4 ([+-] Exp4)*
+      EXP4  ::= Exp5 ([*/] Exp5)*
+      EXP5  ::= ('not' | '-')? Exp6
       
 
 **MICROSYNTAX**

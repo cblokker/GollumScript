@@ -129,7 +129,7 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
          
 **STRINGS AND STRING MANIPULATION**
 
-      Str first = "Hello” + "thief!"                var first = "Hello” + “thief!”; 
+      Str first = "Hello” + "thief!"                var first = "Hello" + "thief!"; 
       Str second = "GollumGollum"sliceIt(3,6)       var second = "GollumGollum".slice(3,6);
       Str third = "GollumGollum"sliceIT(3)          var third = "GollumGollum".slice(3);
       "Baggins are thieves" findsItsIndex("are")    "Baggins are thieves".indexOf("are"); // 9  
@@ -172,7 +172,7 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
 **MICROSYNTAX**
 
       ID     ::=  '_'?[a-z]+ ([-_a-z0-9])*
-      NumLit ::= [0-9]+ (‘.’ [0-9]*)?
-      StrLit ::= ‘“‘ (NumLit | [a-z])* ‘“‘
+      NumLit ::= [0-9]+ ('.' [0-9]*)?
+      StrLit ::= '"' (NumLit | [a-z])* '"'
 
     

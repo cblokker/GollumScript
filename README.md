@@ -138,8 +138,7 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
 **SYNTAX**
 
       Script  		::= Stmt+
-      Block   		::= ':' Stmt+ 'GollumGollum'  
-      
+      Block   		::= ':' Stmt+ 'GollumGollum'
       Stmt    		::= Declaration
                         |   Assignment
                         |   Conditional

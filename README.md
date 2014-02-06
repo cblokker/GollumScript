@@ -140,18 +140,19 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
       Script  		::= Stmt+
       
       Stmt    		::= Declaration
-					|  Assignment
-					|  Conditional
-					|  While
-					|  For
-					|  Return
-					|  Print
-              
-      Declaration 	::= VarDec | ClassDec | FuncDec
-	  Type			::= 'Riddle' | 'Num' | 'Str' | 'Chr' | '<>' | '[]'
+			|   Assignment
+			|   Conditional
+			|   While
+			|   For
+			|   Return
+			|   Print
+			
+      Declaration 	::= VarDec | ClassDec | FuncDec              
+      Type	        ::= 'Riddle' | 'Num' | 'Str' | 'Chr' | '<>' | '[]'
       VarDec      	::= Type Id (Id)* '=' Exp (Exp)*
       ClassDec    	::= 'make Thing' Id VarDec+
       FuncDec     	::= 'make Magic' Id Params Block
+      Params            ::= '(' ')' | '(' TYPE ID (',' TYPE ID)* ')'
       
       Assignment  	::= Id '=' Exp
       Conditional 	::= 'ifes' Exp block ('ifelses' Exp Block)* (‘elses’ Block)?

@@ -139,6 +139,8 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
 
       Script  		::= Stmt+
       
+      Block   		::= ':' Stmt+ 'GollumGollum'  
+      
       Stmt    		::= Declaration
 			|   Assignment
 			|   Conditional
@@ -152,7 +154,7 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
       VarDec      	::= Type Id (Id)* '=' Exp (Exp)*
       ClassDec    	::= 'make Thing' Id VarDec+
       FuncDec     	::= 'make Magic' Id Params Block
-      Params            ::= '(' ')' | '(' TYPE ID (',' TYPE ID)* ')'
+      Params            ::= '(' Type Id (',' TypeE Id)* ')'
       
       Assignment  	::= Id '=' Exp
       Conditional 	::= 'ifes' Exp block ('ifelses' Exp Block)* (‘elses’ Block)?
@@ -168,11 +170,10 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
       EXP4  		::= Exp5 ([*/] Exp5)*
       EXP5  		::= ('not' | '-')? Exp6
       
-	  AddOp			::= '+' | '-'
-	  MulOp			::= '*' | '/' | '%'
-	  RelOp			::= '<' | '<=' | '==' | '!=' | '>=' | '>'
-	  IncOp			::= '++' | '--'
-      Block   		::= ':' Stmt+ 'GollumGollum'  
+      AddOp		::= '+' | '-'
+      MulOp		::= '*' | '/' | '%'
+      RelOp		::= '<' | '<=' | '==' | '!=' | '>=' | '>'
+      IncOp		::= '++' | '--'
       
 
 **MICROSYNTAX**

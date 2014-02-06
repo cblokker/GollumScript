@@ -100,7 +100,14 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
       Num b = 0x213AAC                          var b = 0x213AAC;
       Num c = 13653                             var c = 13653;
       
-**STRINGS AND STRING MANIPULATION**
+**ARRAYS**
+
+      Num[] p = [100, 43, 22, 5, 8]        var p = [100, 43, 22, 5, 8];
+      it n = 78                            var n = 78;
+      p.sneakIn(n)                         p.push(n);
+      printes(p[p.thingsInIt -1]           console.log(p[p.length-1]);
+      it q =p                              var q = p;
+      it a = [88, false, “0001”, green]    var a = [88, false, “0001”, green]; 
 
 **LOOPS**
 
@@ -120,7 +127,13 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
                         printes i                                       }
                 GollumGollum                            }
          
-**ARRAYS**
+**STRINGS AND STRING MANIPULATION**
+
+      Str first = "Hello” + “thief!”                var first = “Hello” + “thief!”; 
+      Str second = “Spitfire”sliceIt(3,6)           var second = "Spitfire".slice(3,6);
+      Str third = "Spitfire"sliceIT(3)              var third = "Spitfire".slice(3);
+      “Baggins are thieves” findsItsIndex("are")    “Baggins are thieves”.indexOf("are"); // 9  
+      “Baggins are thieves”[4]                      "Baggins are thieves"[4]              // 'i'
 
 **SYNTAX**
 

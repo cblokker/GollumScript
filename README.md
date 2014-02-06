@@ -1,4 +1,3 @@
-
 # GollumScript
 
 GollumScript is a language that allows the user to implement solutions like a true LOTR fan should.
@@ -97,6 +96,12 @@ Class names automatically become constructor functions, taking as arguments the 
 **NUMBERS AND THEIR TYPES**
 
 **STRINGS AND STRING MANIPULATION**
+
+     Str first = "Hello” + “thief!”                var first = “Hello” + “thief!”; 
+     Str second = “Spitfire”sliceIt(3,6)           var second = "Spitfire".slice(3,6);
+     Str third = "Spitfire"sliceIT(3)              var third = "Spitfire".slice(3);
+     “Baggins are thieves” findsItsIndex("are")    “Baggins are thieves”.indexOf("are"); // 9  
+     “Baggins are thieves”[4]                  "Baggins are thieves"[4]              // 'i'
 
 **LOOPS**
 

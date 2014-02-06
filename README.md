@@ -7,11 +7,12 @@ The Gollum language is designed by implementing the famous character “Gollum" 
 
 ![Gollum Rules](http://my.cs.lmu.edu/~aalzaid1/gollum/talklikegollum.png "Gollum Rules")
 
+![Gollum Rules](http://upload.wikimedia.org/wikipedia/en/e/e0/Gollum.PNG "Gollum Rules")
 
 
 --------------------------------
 
-##Examples
+##Examples      
 
 **GollumScript ON THE LEFT, JAVASCRIPT ON THE RIGHT**
 
@@ -121,7 +122,7 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
                 GollumGollum                                    } else if (i % 3 == 0) {
                                                                         console.log("Fizz");
                 ifelses i % 5 == 0:                             } else if (i % 5 == 0) {
-                        printes “Smeagol"                                   console.log("Buzz");
+                        printes "Smeagol"                                   console.log("Buzz");
                 GollumGollum                                    } else {
                 elses:                                                  console.log(i);
                         printes i                                       }

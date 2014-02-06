@@ -137,6 +137,30 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
 
 **SYNTAX**
 
+      Script  ::= Stmt+
+      
+      Block   ::= Stmt+ ':' Newline
+      
+      Stmt    ::= Assignment
+               |  Declaration
+               |  Conditional
+               |  Loop
+               |  Return
+               |  Print
+               
+      Declaration ::= VarDec | TypeDec | FuncDec
+      
+      Type ::= 'Riddle' | 'Num' | 'Str' | 'Chr' | '<>' | '[]'
+      
+      VarDec   ::=  Type Id (Id)* ‘=’ Exp (Exp)*
+      TypeDec  ::=  
+      FuncDec  ::=  ‘magic’ Id Params Break Block
+      
+
 **MICROSYNTAX**
+
+      ID     ::=  '_'?[a-z]+ ([-_a-z0-9])*
+      NumLit ::= [0-9]+ (‘.’ [0-9]*)?
+      StrLit ::= ‘“‘ (NumLit | [a-z])* ‘“‘
 
     

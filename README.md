@@ -31,7 +31,7 @@ The Gollum language is designed by implementing the famous character “Gollum" 
 
         it x = 1                                     var x = 1;
         x = x + 1                                    x = x + 1;
-        Printes x                                    console.log(x);
+        printes x                                    console.log(x);
 **ARITHMETIC EXPRESSIONS**
 
         mathes.powes(3/2 - a * b, (300 % c) + mathes.powes(d,2))   Math.pow(3/2 - a * b, (300 % c) + Math.pow(d,2))
@@ -129,11 +129,11 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
          
 **STRINGS AND STRING MANIPULATION**
 
-      Str first = "Hello” + “thief!”                var first = “Hello” + “thief!”; 
-      Str second = “Spitfire”sliceIt(3,6)           var second = "Spitfire".slice(3,6);
-      Str third = "Spitfire"sliceIT(3)              var third = "Spitfire".slice(3);
-      “Baggins are thieves” findsItsIndex("are")    “Baggins are thieves”.indexOf("are"); // 9  
-      “Baggins are thieves”[4]                      "Baggins are thieves"[4]              // 'i'
+      Str first = "Hello” + "thief!"                var first = "Hello” + “thief!”; 
+      Str second = "GollumGollum"sliceIt(3,6)       var second = "GollumGollum".slice(3,6);
+      Str third = "GollumGollum"sliceIT(3)          var third = "GollumGollum".slice(3);
+      "Baggins are thieves" findsItsIndex("are")    "Baggins are thieves".indexOf("are"); // 9  
+      "Baggins are thieves"[4]                      "Baggins are thieves"[4]              // 'i'
 
 **SYNTAX**
 
@@ -142,7 +142,8 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
       Stmt    ::= Declaration
                |  Assignment
                |  Conditional
-               |  Loop
+               |  While
+               |  For
                |  Return
                |  Print
               
@@ -154,9 +155,9 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
       Assignment  ::= Id '=' Exp
       Conditional ::= 'ifes' Exp block ('ifelses' Exp Block)* (‘elses’ Block)?
       While       ::= 'whiles' Exp Block
-      Loop        ::= 'revolves' Id Exp (Exp Exp?)? Block
-      Return      ::= 'givesUs' EXP
-      Print       ::= 'printes' EXP
+      For         ::= 'revolves' Id Exp (Exp Exp?)? Block
+      Return      ::= 'givesUs' Exp
+      Print       ::= 'printes' Exp
       
       Exp   ::= Exp1 ('or' Exp1)*
       Exp1  ::= Exp2 ('and' Exp2)*

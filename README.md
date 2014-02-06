@@ -146,18 +146,17 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
                |  Return
                |  Print
               
-      Declaration ::= VarDec | TypeDec | FuncDec
+      Declaration ::= VarDec | ClassDec | FuncDec
       VarDec      ::= Type Id (Id)* '=' Exp (Exp)*
-      TypeDec     ::=  
-      FuncDec     ::= 'magic' Id Params Break Block
+      ClassDec    ::= 'make Thing' Id VarDec+
+      FuncDec     ::= 'make Magic' Id Params Block
       
       Assignment  ::= Id '=' Exp
       Conditional ::= 'ifes' Exp block ('ifelses' Exp Block)* (‘elses’ Block)?
       While       ::= 'whiles' Exp Block
-      Loop        ::=
+      Loop        ::= 'revolves' Id Exp (Exp Exp?)? Block
       Return      ::= 'givesUs' EXP
       Print       ::= 'printes' EXP
-      
       
       Exp   ::= Exp1 ('or' Exp1)*
       Exp1  ::= Exp2 ('and' Exp2)*
@@ -166,7 +165,7 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
       EXP4  ::= Exp5 ([*/] Exp5)*
       EXP5  ::= ('not' | '-')? Exp6
       
-      Block   ::= Stmt+ ':' Newline
+      Block   ::= ':' (Stmt NEWLINE+)+  
       
 
 **MICROSYNTAX**

@@ -137,42 +137,50 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
 
 **SYNTAX**
 
-      Script  ::= Stmt+
+      Script  		::= Stmt+
       
-      Stmt    ::= Declaration
-               |  Assignment
-               |  Conditional
-               |  While
-               |  For
-               |  Return
-               |  Print
+      Stmt    		::= Declaration
+					|  Assignment
+					|  Conditional
+					|  While
+					|  For
+					|  Return
+					|  Print
               
-      Declaration ::= VarDec | ClassDec | FuncDec
-      VarDec      ::= Type Id (Id)* '=' Exp (Exp)*
-      ClassDec    ::= 'make Thing' Id VarDec+
-      FuncDec     ::= 'make Magic' Id Params Block
+      Declaration 	::= VarDec | ClassDec | FuncDec
+	  Type			::= 'Riddle' | 'Num' | 'Str' | 'Chr' | '<>' | '[]'
+      VarDec      	::= Type Id (Id)* '=' Exp (Exp)*
+      ClassDec    	::= 'make Thing' Id VarDec+
+      FuncDec     	::= 'make Magic' Id Params Block
       
-      Assignment  ::= Id '=' Exp
-      Conditional ::= 'ifes' Exp block ('ifelses' Exp Block)* (‘elses’ Block)?
-      While       ::= 'whiles' Exp Block
-      For         ::= 'revolves' Id Exp (Exp Exp?)? Block
-      Return      ::= 'givesUs' Exp
-      Print       ::= 'printes' Exp
+      Assignment  	::= Id '=' Exp
+      Conditional 	::= 'ifes' Exp block ('ifelses' Exp Block)* (‘elses’ Block)?
+      While       	::= 'whiles' Exp Block
+      For         	::= 'revolves' Id Exp (Exp Exp?)? Block
+      Return      	::= 'givesUs' Exp
+      Print       	::= 'printes' Exp
       
-      Exp   ::= Exp1 ('or' Exp1)*
-      Exp1  ::= Exp2 ('and' Exp2)*
-      Exp2  ::= Exp3 (( '<' | '<=' | '==' | '!=' | '>=' | '>') Exp3)?
-      Exp3  ::= Exp4 ([+-] Exp4)*
-      EXP4  ::= Exp5 ([*/] Exp5)*
-      EXP5  ::= ('not' | '-')? Exp6
+      Exp   		::= Exp1 ('or' Exp1)*
+      Exp1  		::= Exp2 ('and' Exp2)*
+      Exp2  		::= Exp3 (( '<' | '<=' | '==' | '!=' | '>=' | '>') Exp3)?
+      Exp3  		::= Exp4 ([+-] Exp4)*
+      EXP4  		::= Exp5 ([*/] Exp5)*
+      EXP5  		::= ('not' | '-')? Exp6
       
-      Block   ::= ':' Stmt+ 'GollumGollum'  
+	  AddOp			::= '+' | '-'
+	  MulOp			::= '*' | '/' | '%'
+	  RelOp			::= '<' | '<=' | '==' | '!=' | '>=' | '>'
+	  IncOp			::= '++' | '--'
+      Block   		::= ':' Stmt+ 'GollumGollum'  
       
 
 **MICROSYNTAX**
-
-      ID     ::=  '_'?[a-z]+ ([-_a-z0-9])*
-      NumLit ::= [0-9]+ ('.' [0-9]*)?
-      StrLit ::= '"' (NumLit | [a-z])* '"'
+	  
+	  BR			::= NEWLINE
+	  COMMENT		::= ~~ ()* NEWLINE
+					|   ~* ()* *~
+      ID     		::=  '_'?[a-z]+ ([-_a-z0-9])*
+      NumLit 		::= [0-9]+ ('.' [0-9]*)?
+      StrLit 		::= '"' (NumLit | [a-z])* '"'
 
     

@@ -108,8 +108,8 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
                 printes "make it stop"                          console.log("make it stop");
         GollumGollum                                        }
         
-        revolves i 1 100 1                            for (var i = 1; i <= 100; i++) {
-                ifes	i % 15 == 0:		                if (i % 15 == 0) {
+        revolves i 1 100 1:                            for (var i = 1; i <= 100; i++) {
+                ifes i % 15 == 0:		                if (i % 15 == 0) {
                         printes “Blessed"         		        console.log("FizzBuzz");
                 GollumGollum                                    } else if (i % 3 == 0) {
                                                                         console.log("Fizz");

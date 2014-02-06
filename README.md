@@ -166,7 +166,7 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
       EXP4  ::= Exp5 ([*/] Exp5)*
       EXP5  ::= ('not' | '-')? Exp6
       
-      Block   ::= ':' (Stmt NEWLINE+)+  
+      Block   ::= ':' Stmt+ 'GollumGollum'  
       
 
 **MICROSYNTAX**

@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Crib Sheet</title>
+    </head>
+
+    <body>
+
+        <table border="1">
+            <tr>
+                <td><b>Command</b></td>
+                <td><b>Description</b></td>
+                <td><b>Example</b></td>
+                <td><b>Example Description</b></td>
+            </tr>
+            <tr>
+                <td>cd</td>
+                <td>Change Directory</td>
+                <td>$cd repos</td>
+                <td>go to the repos directory</td>
+            </tr>
+            <tr>
+                <td>man</td>
+                <td>access the manual</td>
+                <td>$man man</td>
+                <td>displays information about the man command</td>
+            </tr>
+            <tr>
+                <td>ls</td>
+                <td>List information about file(s)</td>
+                <td>$ls -l</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ps</td>
+                <td>Process status</td>
+                <td>$ps U $USER</td>
+                <td>View Processes Owned by Current User</td>
+            </tr>
+            <tr>
+                <td>pwd</td>
+                <td>Print Working Directory</td>
+                <td>$pwd</td>
+                <td>Shows the working directory</td>
+            </tr>
+
+            <tr>
+                <td>cp</td>
+                <td>copy a file</td>
+                <td>$cp -u *.txt newdir</td>
+                <td>Copy all files ending in .txt into the newdir directory, but only if the files do not already exist in the new directory, or if the files being copied are newer</td>
+            </tr>
+
+
+            <tr>
+                <td>mv</td>
+                <td>move a file</td>
+                <td>$mv hello.py python_examples</td>
+                <td>moves the file hello.py in the current directory to the directory python_examples</td>
+            </tr>
+
+            <tr>
+                <td>mkdir</td>
+                <td>Create new folder(s)</td>
+                <td>$mkdir ~/repos/</td>
+                <td>creates the directory named repos</td>
+            </tr>
+
+            <tr>
+                <td>cat</td>
+                <td>Concatenate and print (display) the content of files</td>
+                <td>$cat score.txt names.txt > report.txt</td>
+                <td>combines score.txt and names.txt and creates a new file called report.txt</td>
+            </tr>
+
+            <tr>
+                <td>ping</td>
+                <td>Test a network connection</td>
+                <td>$ping -c 5 google.com</td>
+                <td>send 5 packets to google and stop</td>
+            </tr>
+
+            <tr>
+                <td>grep</td>
+                <td>Search file(s) for lines that match a given pattern</td>
+                <td>$grep -i "hello" hello.py</td>
+                <td>case insensitive search for hello in hello.py</td>
+            </tr>
+        </table>
+    </body>
+</html>

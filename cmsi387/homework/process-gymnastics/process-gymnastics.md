@@ -245,8 +245,7 @@ Chases-MacBook-Pro:~ cblokker$ ps axo vsize,command | sort -n | tail -1
 ```
 
 
-#### 4.  Login to my.cs.lmu.edu. Who else, other than root 
-and you, has processes running at that time?
+#### 4.  Login to my.cs.lmu.edu. Who else, other than root and you, has processes running at that time?
 
 ```
 cblokker@ab201:~$ ps aux | grep -v root | grep -v cblokker

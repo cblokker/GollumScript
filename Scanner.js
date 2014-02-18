@@ -44,7 +44,16 @@ function scan(line, linenumber, tokens) {
     if (pos >= line.length) break
 
     // Comment
+    //line
     if (line[pos] == '~' && line[pos+1] == '~') break
+    //block
+    if (line[pos] == '~' && line[pos+1] == '*') {
+      var comment = true;
+      while(comment){
+        break
+        comment = !(line[pos] == '*' && line[pos+1] == '~')?; 
+      }
+    }
     
     // Two-character tokens
     if (/<=|==|>=|!=/.test(line.substring(pos, pos+2))) {

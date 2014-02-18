@@ -68,7 +68,7 @@ function scan(line, linenumber, tokens) {
     } else if (/[A-Za-z]/.test(line[pos])) {
       while (/\w/.test(line[pos]) && pos < line.length) pos++
       var word = line.substring(start, pos)
-      if (/^(?:int|bool|var|read|write|while|loop|end|and|or|not|true|false)$/.test(word)) {
+      if (/^(?:Num|Riddle|it|whiles|revolve Till|Str|Chr|givesUs|revolves|make Thing|make Magic|ifes|elses|ifElses|bless|thief|printes|forever)$/.test(word)) {
         emit(word)
       } else {
         emit('ID', word)

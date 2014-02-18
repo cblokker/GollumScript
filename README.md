@@ -63,7 +63,7 @@ The Gollum language is designed by implementing the famous character “Gollum" 
 
         ifes                               if 
         elses                              else 
-        ifelses                            else if 
+        ifElses                            else if 
         make Magic                         define function
         make Thing                         define class
         revolve Til                        loop until
@@ -121,7 +121,7 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
                         printes “Blessed"         		        console.log("FizzBuzz");
                 GollumGollum                                    } else if (i % 3 == 0) {
                                                                         console.log("Fizz");
-                ifelses i % 5 == 0:                             } else if (i % 5 == 0) {
+                ifElses i % 5 == 0:                             } else if (i % 5 == 0) {
                         printes "Smeagol"                                   console.log("Buzz");
                 GollumGollum                                    } else {
                 elses:                                                  console.log(i);
@@ -156,7 +156,7 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
       Params            ::= '(' Type Id (',' TypeE Id)* ')'
       
       Assignment  	::= Id '=' Exp
-      Conditional 	::= 'ifes' Exp block ('ifelses' Exp Block)* (‘elses’ Block)?
+      Conditional 	::= 'ifes' Exp block ('ifElses' Exp Block)* (‘elses’ Block)?
       While       	::= 'whiles' Exp Block
       For         	::= 'revolves' Id Exp (Exp Exp?)? Block
       Return      	::= 'givesUs' Exp

@@ -101,7 +101,6 @@ describe('The scanner', function () {
   })
 
 
-
   it('detects illegal characters', function (done) {
     scan('test/data/illegal-char', function () {
       error.count.should.equal(1)

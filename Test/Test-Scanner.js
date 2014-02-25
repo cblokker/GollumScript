@@ -15,6 +15,7 @@ describe('The scanner', function () {
       done()
     })
   })
+})
 /*
   it('properly handles comments and blank lines', function (done) {
     scan('test/data/token-tests/comments-and-blank-lines', function (tokens) {
@@ -82,5 +83,10 @@ describe('The scanner', function () {
     scan('test/data/token-tests/illegal-char', function () {
       error.count.should.equal(1)
       done()
+<<<<<<< HEAD
     })*/
   })
+=======
+    })
+  })})*/
+>>>>>>> 7dfa23098624b972f9832d9fe2b71e97062c6a3f

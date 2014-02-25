@@ -51,7 +51,7 @@ function scan(line, linenumber, tokens) {
       var comment = true;
       while(comment){
         break
-        comment = !(line[pos] == '*' && line[pos+1] == '~')?; 
+        comment = !(line[pos] == '*' && line[pos+1] == '~')? 
       }
     }
     

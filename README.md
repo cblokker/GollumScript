@@ -189,28 +189,34 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
 
       ~~ A Body Mass Index function
       magic it bmi(it pounds, it inches){
-                forever it KILOGRAM_PER_POUND = 0.45359237
-                forever it METERS_PER_INCH = 0.0254
-                it kilos = pounds * KILOGRAM_PER_POUND
-                it inches = inches * METERS_PER_INCH
-                givesUs kilos / (meters * meters)
+          forever it KILOGRAM_PER_POUND = 0.45359237
+          forever it METERS_PER_INCH = 0.0254
+          it kilos = pounds * KILOGRAM_PER_POUND
+          it inches = inches * METERS_PER_INCH
+          givesUs kilos / (meters * meters)
       GollumGollum
       printes bmi (120,66)
+      
+      
+      
       ~~ Returns the largest element in an array.
       magic it max (a) {
-                it largest = a[0]
-                revolves (it i = 1; i <  a.thingsInIt; i ++) {
-                        ifes (a[i] > largest) {
-                                largest = a[i]
-                        }
-                }
-                givesUs largest
+          it largest = a[0]
+          revolves (it i = 1; i <  a.thingsInIt; i ++) {
+              ifes (a[i] > largest) {
+                 largest = a[i]
+              }
+          }
+          givesUs largest
       GollumGollum
+      
+      
+      
       ~~ A sum function
       magic it sum (a) {
-                it result = 0
-                revolves (it i = 0; i < a.thingsInIt; i++ ) {
-                        result += a[i]
-                }
-                givesUs result
+          it result = 0
+          revolves (it i = 0; i < a.thingsInIt; i++ ) {
+              result += a[i]
+           }
+           givesUs result
       GollumGollum

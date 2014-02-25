@@ -47,10 +47,9 @@ describe('The scanner', function () {
       done()
     })
   })
-});
 
   it('reads symbolic tokens properly', function (done) {
-    scan('test/data/token-tests/symbols', function (tokens) {
+    scan('test/data/symbols', function (tokens) {
       i(tokens[0]).should.equal(i({kind:'<=',lexeme:'<=',line:1,col:1}))
       i(tokens[1]).should.equal(i({kind:'<',lexeme:'<',line:1,col:3}))
       i(tokens[2]).should.equal(i({kind:',',lexeme:',',line:1,col:4}))
@@ -66,35 +65,33 @@ describe('The scanner', function () {
       done()
     })
   })
-});
 
-/*
+
 
   it('distinguishes reserved words and identifiers', function (done) {
-    scan('test/data/token-tests/words', function (tokens) {
-      i(tokens[0]).should.equal(i({kind:'ID',lexeme:'whilexy',line:1,col:1}))
-      i(tokens[1]).should.equal(i({kind:'while',lexeme:'while',line:1,col:9}))
-      i(tokens[2]).should.equal(i({kind:'ID',lexeme:'whil',line:1,col:15}))
-      i(tokens[3]).should.equal(i({kind:'end',lexeme:'end',line:1,col:20}))
-      i(tokens[4]).should.equal(i({kind:'loop',lexeme:'loop',line:1,col:24}))
-      i(tokens[5]).should.equal(i({kind:'var',lexeme:'var',line:1,col:29}))
-      i(tokens[6]).should.equal(i({kind:'and',lexeme:'and',line:1,col:33}))
-      i(tokens[7]).should.equal(i({kind:'or',lexeme:'or',line:1,col:37}))
-      i(tokens[8]).should.equal(i({kind:'ID',lexeme:'ore',line:1,col:40}))
-      i(tokens[9]).should.equal(i({kind:'not',lexeme:'not',line:1,col:44}))
-      i(tokens[11]).should.equal(i({kind:'ID',lexeme:'intbool',line:1,col:48}))
-      i(tokens[13]).should.equal(i({kind:'int',lexeme:'int',line:1,col:56}))
-      i(tokens[15]).should.equal(i({kind:'bool',lexeme:'bool',line:1,col:60}))
-      i(tokens[17]).should.equal(i({kind:'read',lexeme:'read',line:1,col:65}))
-      i(tokens[19]).should.equal(i({kind:'write',lexeme:'write',line:1,col:70}))
-      i(tokens[21]).should.equal(i({kind:'true',lexeme:'true',line:1,col:76}))
-      i(tokens[23]).should.equal(i({kind:'false',lexeme:'false',line:1,col:81}))
+    scan('test/data/words.gollum', function (tokens) {
+     i(tokens[0]).should.equal(i({kind:'ID',lexeme:'whilexy',line:1,col:1}))
+     i(tokens[1]).should.equal(i({kind:'whiles',lexeme:'whiles',line:1,col:9}))
+     i(tokens[2]).should.equal(i({kind:'ID',lexeme:'whil',line:1,col:16}))
+     i(tokens[4]).should.equal(i({kind:'revolves',lexeme:'revolves',line:1,col:27}))
+     i(tokens[5]).should.equal(i({kind:'it',lexeme:'it',line:1,col:36}))
+     i(tokens[6]).should.equal(i({kind:'ifes',lexeme:'ifes',line:1,col:39}))
+     i(tokens[7]).should.equal(i({kind:'ID',lexeme:'ore',line:1,col:44}))
+     i(tokens[8]).should.equal(i({kind:':',lexeme:':',line:1,col:48}))
+     i(tokens[9]).should.equal(i({kind:'Num',lexeme:'Num',line:1,col:49}))
+     i(tokens[11]).should.equal(i({kind:'ID',lexeme:'intbool',line:1,col:53}))
+     i(tokens[13]).should.equal(i({kind:'Chr',lexeme:'Chr',line:1,col:61}))
+     i(tokens[15]).should.equal(i({kind:'makeThing',lexeme:'makeThing',line:1,col:65}))
+     i(tokens[17]).should.equal(i({kind:'printes',lexeme:'printes',line:1,col:75}))
+     i(tokens[19]).should.equal(i({kind:'bless',lexeme:'bless',line:1,col:83}))
+     i(tokens[21]).should.equal(i({kind:'thief',lexeme:'thief',line:1,col:89}))
       done()
     })
   })
 
+
   it('scans numbers properly', function (done) {
-    scan('test/data/token-tests/numbers', function (tokens) {
+    scan('test/data/numbers', function (tokens) {
       i(tokens[0]).should.equal(i({kind:'ID',lexeme:'loop89x7',line:1,col:1}))
       i(tokens[2]).should.equal(i({kind:'INTLIT',lexeme:'222289',line:1,col:10}))
       i(tokens[3]).should.equal(i({kind:'ID',lexeme:'while9',line:1,col:16}))
@@ -102,6 +99,8 @@ describe('The scanner', function () {
       done()
     })
   })
+});
+/*
 
   it('detects illegal characters', function (done) {
     scan('test/data/token-tests/illegal-char', function () {

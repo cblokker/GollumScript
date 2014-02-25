@@ -168,13 +168,13 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
       Exp2  		::= Exp3 (( RelOp) Exp3)?
       Exp3  		::= Exp4 (AddOp Exp4)*
       EXP4  		::= Exp5 (MulOp Exp5)*
-      EXP5  		::= (PrefixOp)? Exp6
+      EXP5              ::= (PrefixOp)? Exp6
       EXP6              ::=  'bless' | 'thief' | NumLit | StrLit | '(' Exp ')'
       
-      AddOp		::= '+' | '-'
-      MulOp		::= '*' | '/' | '%'
-      RelOp		::= '<' | '<=' | '==' | '!=' | '>=' | '>'
-      IncOp		::= '++' | '--'
+      AddOp             ::= '+' | '-'
+      MulOp             ::= '*' | '/' | '%'
+      RelOp             ::= '<' | '<=' | '==' | '!=' | '>=' | '>'
+      IncOp             ::= '++' | '--'
       PrefixOp          ::= '-' | 'not'
       
       

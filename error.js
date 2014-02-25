@@ -1,5 +1,5 @@
-// To br created
-r module
+/*
+ * Error module
  *
  *   var error = require('./error')
  *
@@ -23,4 +23,3 @@ function error(message, location) {
 error.count = 0
 
 module.exports = error
-

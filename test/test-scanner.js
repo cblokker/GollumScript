@@ -99,12 +99,13 @@ describe('The scanner', function () {
       done()
     })
   })
-});
-/*
+
+
 
   it('detects illegal characters', function (done) {
-    scan('test/data/token-tests/illegal-char', function () {
+    scan('test/data/illegal-char', function () {
       error.count.should.equal(1)
       done()
-    })*/
+    })})
+});
 

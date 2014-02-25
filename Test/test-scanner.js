@@ -6,7 +6,7 @@ var i = require('util').inspect
 describe('The scanner', function () {
 
   it('scans the simplest program', function (done) {
-    scan('test/data/good-programs/hello.gollum', function (tokens) {
+    scan('Test/Data/hello.gollum', function (tokens) {
       tokens.length.should.equal(4)
       i(tokens[0]).should.equal(i({kind:'givesUs',lexeme:'givesUs',line:1,col:1}))
       i(tokens[1]).should.equal(i({kind:'Num',lexeme:'0',line:1,col:7}))

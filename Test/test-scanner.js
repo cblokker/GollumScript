@@ -14,7 +14,7 @@ describe('The scanner', function () {
       i(tokens[3]).should.equal(i({kind:'EOF',lexeme:'EOF'}))
       done()
     })
-  })
+  })});
 /*
   it('properly handles comments and blank lines', function (done) {
     scan('test/data/token-tests/comments-and-blank-lines', function (tokens) {
@@ -83,4 +83,4 @@ describe('The scanner', function () {
       error.count.should.equal(1)
       done()
     })*/
-})
+

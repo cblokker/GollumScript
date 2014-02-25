@@ -196,5 +196,21 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
                 givesUs kilos / (meters * meters)
       GollumGollum
       printes bmi (120,66)
-
-    
+      ~~ Returns the largest element in an array.
+      magic it max (a) {
+                it largest = a[0]
+                revolves (it i = 1; i <  a.thingsInIt; i ++) {
+                        ifes (a[i] > largest) {
+                                largest = a[i]
+                        }
+                }
+                givesUs largest
+      GollumGollum
+      ~~ A sum function
+      magic it sum (a) {
+                it result = 0
+                revolves (it i = 0; i < a.thingsInIt; i++ ) {
+                        result += a[i]
+                }
+                givesUs result
+      GollumGollum

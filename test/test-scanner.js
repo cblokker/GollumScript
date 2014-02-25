@@ -14,7 +14,29 @@ describe('The scanner', function () {
       i(tokens[3]).should.equal(i({kind:'EOF',lexeme:'EOF'}))
       done()
     })
-  })});
+  })
+  
+  it('distinguishes reserved words and identifiers', function (done) {
+    scan('test/data/words.gollum', function (tokens) {
+      i(tokens[0]).should.equal(i({kind:'ID',lexeme:'whilexy',line:1,col:1}))
+      i(tokens[1]).should.equal(i({kind:'whiles',lexeme:'whiles',line:1,col:9}))
+      i(tokens[2]).should.equal(i({kind:'ID',lexeme:'whil',line:1,col:16}))
+      i(tokens[4]).should.equal(i({kind:'revolves',lexeme:'revolves',line:1,col:27}))
+      i(tokens[5]).should.equal(i({kind:'it',lexeme:'it',line:1,col:36}))
+      i(tokens[6]).should.equal(i({kind:'ifes',lexeme:'ifes',line:1,col:39}))
+      i(tokens[7]).should.equal(i({kind:'ID',lexeme:'ore',line:1,col:44}))
+      i(tokens[8]).should.equal(i({kind:':',lexeme:':',line:1,col:48}))
+      i(tokens[9]).should.equal(i({kind:'Num',lexeme:'Num',line:1,col:49}))
+      i(tokens[11]).should.equal(i({kind:'ID',lexeme:'intbool',line:1,col:53}))
+      i(tokens[13]).should.equal(i({kind:'Chr',lexeme:'Chr',line:1,col:61}))
+      i(tokens[15]).should.equal(i({kind:'makeThing',lexeme:'makeThing',line:1,col:65}))
+      i(tokens[17]).should.equal(i({kind:'printes',lexeme:'printes',line:1,col:75}))
+      i(tokens[19]).should.equal(i({kind:'bless',lexeme:'bless',line:1,col:83}))
+      i(tokens[21]).should.equal(i({kind:'thief',lexeme:'thief',line:1,col:89}))
+      done()
+    })
+  })
+});
 /*
   it('properly handles comments and blank lines', function (done) {
     scan('test/data/token-tests/comments-and-blank-lines', function (tokens) {

@@ -107,11 +107,11 @@ function parseWriteStatement() {
 }
 
 function parseWhileStatement() {
-  match('while')
-  var condition = parseExpression()
-  match('loop')
-  var body = parseBlock()
-  match('end')
+  match('while')//circle while
+  var condition = parseExpression()//box Exp
+  match('loop')//circle loop
+  var body = parseBlock()//box block
+  match('end')//circle end
   return new WhileStatement(condition, body)
 }  
 

@@ -47,7 +47,7 @@ The Gollum language is designed by implementing the famous character “Gollum" 
 
 **FUNCTIONS**
 
-        magic it bmi(it pounds, it inches){                 var bmi = function (pounds, inches) {
+        magic it bmi(it pounds, it inches)                  var bmi = function (pounds, inches) {
             forever it KILOGRAM_PER_POUND = 0.45359237          var KILOGRAMS_PER_POUND = 0.45359237;
             forever it METERS_PER_INCH = 0.0254                 var METERS_PER_INCH = 0.0254;
             it kilos = pounds * KILOGRAM_PER_POUND              var kilos = pounds * KILOGRAMS_PER_POUND;
@@ -55,7 +55,7 @@ The Gollum language is designed by implementing the famous character “Gollum" 
             givesUs kilos / (meters * meters)                   return kilos / (meters * meters)
         GollumGollum                                        }
                                             	    
-        magic it gcd(x, y){                                 var gcd = function (x, y) {
+        magic it gcd(x, y)                                  var gcd = function (x, y) {
             givesUs x % y == 0 ? x : gcd(y, x % y)              return x%y == 0 ? x : gcd(y, x%y); 
         GollumGollum                                        }       
     
@@ -75,10 +75,11 @@ The Gollum language is designed by implementing the famous character “Gollum" 
 
        Riddle                               boolean 
        Num                                  number
+       Flt                                  float
        Str                                  string 
        Chr                                  character
        <>                                   type of the null literal
-       []                                   array (e.g., [N] is array of number)
+       []                                   array (e.g., Num[] is array of number)
        
 **CLASSES**
 
@@ -112,19 +113,19 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
 
 **LOOPS**
 
-        while (bless){                                while (true) {
+        while (bless)                                 while (true) {
                 printes "make it stop"                         console.log("make it stop");
         GollumGollum                                  }
         
-        revolves (it i = 0; i <= 100; i++) {          for (var i = 0; i <= 100; i++) {
-                ifes (i % 15 == 0) {	                      if (i % 15 == 0) {
+        revolves (it i = 0; i <= 100; i++)            for (var i = 0; i <= 100; i++) {
+                ifes (i % 15 == 0)  	                      if (i % 15 == 0) {
                         printes “Blessed"         		        console.log("FizzBuzz");
                 GollumGollum                                  } else if (i % 3 == 0) {
                                                                         console.log("Fizz");
-                ifElses (i % 5 == 0) {                        } else if (i % 5 == 0) {
+                ifElses (i % 5 == 0)                          } else if (i % 5 == 0) {
                         printes "Smeagol"                                   console.log("Buzz");
                 GollumGollum                                  } else {
-                elses{                                                  console.log(i);
+                elses                                                  console.log(i);
                         printes i                             }
                 GollumGollum                          }
         GollumGollum
@@ -140,7 +141,7 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
 **SYNTAX**
 
       Script  		::= Stmt+
-      Block   		::= '{' Stmt+ 'GollumGollum'
+      Block   		::= Stmt+ 'GollumGollum'
       Stmt    		::= Declaration
                         |   Assignment
                         |   Conditional
@@ -154,7 +155,7 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
       VarDec      	::= Type Id (Id)* '=' Exp (Exp)*
       ClassDec    	::= 'make Thing' Id VarDec+
       FuncDec     	::= 'make Magic' Id Params Block
-      Params            ::= '(' Type Id (',' TypeE Id)* ')'
+      Params            ::= '(' Type Id (',' Type Id)* ')'
       
       Assignment  	::= Id '=' Exp
       Conditional 	::= 'ifes' Exp block ('ifElses' Exp Block)* (‘elses’ Block)?
@@ -188,7 +189,7 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
 **SAMPLE PROGRAMS**
 
       ~~ A Body Mass Index function
-      magic it bmi(it pounds, it inches){
+      magic it bmi(it pounds, it inches) 
           forever it KILOGRAM_PER_POUND = 0.45359237
           forever it METERS_PER_INCH = 0.0254
           it kilos = pounds * KILOGRAM_PER_POUND
@@ -205,18 +206,18 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
           revolves (it i = 1; i <  a.thingsInIt; i ++) {
               ifes (a[i] > largest) {
                  largest = a[i]
-              }
-          }
+              GollumGollum
+          GollumGollum
           givesUs largest
       GollumGollum
       
       
       
       ~~ A sum function
-      magic it sum (a) {
+      magic it sum (a) 
           it result = 0
-          revolves (it i = 0; i < a.thingsInIt; i++ ) {
+          revolves (it i = 0; i < a.thingsInIt; i++ ) 
               result += a[i]
-           }
+           GollumGollum
            givesUs result
       GollumGollum

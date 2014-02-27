@@ -171,7 +171,7 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
       EXP4          ::= Exp5 (MulOp Exp5)*
       EXP5          ::= (PrefixOp)? Exp6
       EXP6          ::=  'bless' | 'thief' | NumLit | StrLit | '(' Exp ')' | '[' Exp (',' Exp )* ']' |
-                         'ring' '(' Exp (',' Exp )* )
+                         Id '(' Exp (',' Exp )* )
       
       AddOp         ::= '+' | '-'
       MulOp         ::= '*' | '/' | '%'
@@ -182,10 +182,10 @@ Numbers in Gollum can be denoted as octal, hexadecimal, or decimal. Octal number
       
 **MICROSYNTAX**
 
-      Comment		::= ~~ ()* NEWLINE |  ~* ()* *~
-      Id     		::=  '_'?[a-z]+ ([-_a-z0-9])*
+      Comment		::= ~~ for single line comments |  ~* here goes a block comment*~
+      Id     		::= '_'?[a-z]+ ([-_a-z0-9])*
       NumLit 		::= [0-9]+ ('.' [0-9]*)?
-      StrLit 		::= '"' (NumLit | [a-z])* '"'
+      StrLit 		::= '"' Here goes a String '"'
 
 **SAMPLE PROGRAMS**
 

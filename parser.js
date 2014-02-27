@@ -70,7 +70,7 @@ function parseVariableDeclaration() {
 }
 
 function parseType() {
-  if (at(['int','bool'])) {
+  if (at(['Riddle','Num','Str','Chr','<>','[]'])) {
     return Type.forName(match().lexeme)
   } else {
     error('Type expected', tokens[0])
@@ -107,11 +107,11 @@ function parseWriteStatement() {
 }
 
 function parseWhileStatement() {
-  match('while')//circle while
-  var condition = parseExpression()//box Exp
-  match('loop')//circle loop
-  var body = parseBlock()//box block
-  match('end')//circle end
+  match('while')
+  var condition = parseExpression()
+  match('loop')
+  var body = parseBlock()
+  match('end')
   return new WhileStatement(condition, body)
 }  
 

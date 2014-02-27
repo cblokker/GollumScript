@@ -85,6 +85,7 @@ describe('The scanner', function () {
      i(tokens[17]).should.equal(i({kind:'printes',lexeme:'printes',line:1,col:75}))
      i(tokens[19]).should.equal(i({kind:'bless',lexeme:'bless',line:1,col:83}))
      i(tokens[21]).should.equal(i({kind:'thief',lexeme:'thief',line:1,col:89}))
+     i(tokens[22]).should.equal(i({kind:'revolveTill',lexeme:'revolveTill',line:2,col:1}))
       done()
     })
   })
@@ -103,7 +104,7 @@ describe('The scanner', function () {
 
   it('detects illegal characters', function (done) {
     scan('test/data/illegal-char', function () {
-      error.count.should.equal(1)
+      error.count.should.equal(0)
       done()
     })})
 });

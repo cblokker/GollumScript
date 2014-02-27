@@ -44,14 +44,14 @@ function scan(line, linenumber, tokens) {
     if (pos >= line.length) break
 
     // Comment
-    //line
+    // line
     if (line[pos] == '~' && line[pos+1] == '~') break
-    //block
+    // block
     if (line[pos] == '~' && line[pos+1] == '*') {
       var comment = true;
       while(comment){
-        break
         comment = !(line[pos] == '*' && line[pos+1] == '~')
+        break
       }
     }
     
@@ -61,14 +61,14 @@ function scan(line, linenumber, tokens) {
       pos += 2
 
     // One-character tokens
-    } else if (/[+\-*\/(),:;=<>]/.test(line[pos])) {
+    } else if (/[+\-*\/(),:;=%<>]/.test(line[pos])) {
       emit(line[pos++])
 
     // Reserved words or identifiers
     } else if (/[A-Za-z]/.test(line[pos])) {
       while (/\w/.test(line[pos]) && pos < line.length) pos++
       var word = line.substring(start, pos)
-      if (/^(?:Num|Riddle|it|whiles|revolve Till|Str|Chr|givesUs|revolves|makeThing|makeMagic|ifes|elses|ifElses|bless|thief|printes|forever)$/.test(word)) {
+      if (/^(?:Num|Riddle|it|whiles|revolveTill|Str|Chr|givesUs|revolves|makeThing|makeMagic|ifes|elses|ifElses|bless|thief|printes|forever)$/.test(word)) {
         emit(word)
       } else {
         emit('ID', word)

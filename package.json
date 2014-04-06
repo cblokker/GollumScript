@@ -1,0 +1,14 @@
+{
+  "name": "GollumScript",
+  "version": "0.0.1",
+  "description": "a simple compiler for the GollumScript programming language",
+  "dependencies": {
+    "byline": "latest",
+    "hashmap": "latest",
+    "yargs": "latest"
+  },
+  "devDependencies": {
+    "mocha": "latest",
+    "should": "latest"
+  }
+}
